@@ -10,8 +10,7 @@ function Note() {
     </div>
   );
 }
-
-// class Note extends React.Component{
+// class ABC extends React.Component{
 //     render(){
 //         return(
 //          <div>

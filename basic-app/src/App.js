@@ -2,6 +2,7 @@ import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Note from './Container/Note/Note';
+import LifeCycleDemo from "./Container/LifeCycle/LifeCycle";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <div className="container">
         <p className="text-center">The app is coming soon ...</p>
         <br/>
-        <Note />
+        {/* <Note /> */}
+        <LifeCycleDemo />
       </div>
   );
 }
