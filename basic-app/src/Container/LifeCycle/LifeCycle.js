@@ -8,8 +8,11 @@ class LifeCycleDemo extends React.Component{
         }
         console.log("[CONSTRUCTOR]")
     }
+    // componentWillMount(){
+    //     console.log("[COMPONENT WILL MOUNT]")
+    // }
     componentDidMount(){
-        console.log("[COPONENT DID MOUNT]")
+        console.log("[COMPONENT DID MOUNT]")
     }
     componentDidUpdate(){
         console.log("[COMPONENT DID UPDATE]")
@@ -18,6 +21,7 @@ class LifeCycleDemo extends React.Component{
         console.log("[COMPONENT WIL UNMOUNT]")
     }
     clickHandler = () => {
+    // clickHandler(){
         // console.log("CLICKED");
         // this.state.counter++;
         // this.state.todos.push()
@@ -26,7 +30,7 @@ class LifeCycleDemo extends React.Component{
         })
     }
     shouldComponentUpdate(){        
-        console.log("SHOULD COMPONENT UPDATE");
+        console.log("[SHOULD COMPONENT UPDATE]");
         if(this.state.counter < 3){
             return true;
         }
@@ -35,12 +39,15 @@ class LifeCycleDemo extends React.Component{
         }
     }
     render(){
+        // Side effect
+        // this.setState({counter : 200});
         console.log("[RENDER]");
         return (
             <div>
                 Life cycle demo is in progress ....
                 <hr />
-        <button onClick = {this.clickHandler}>  + </button>  | Counter : {this.state.counter}
+        {/* <button onClick = {this.clickHandler.bind(this)}>  + </button>  | Counter : {this.state.counter} */}
+        <button onClick = {this.clickHandler.bind(this)}>  + </button>  | Counter : {this.state.counter}
             </div>
         )
     }

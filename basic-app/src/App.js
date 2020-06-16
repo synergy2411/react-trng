@@ -3,6 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Note from './Container/Note/Note';
 import LifeCycleDemo from "./Container/LifeCycle/LifeCycle";
+import Parent from "./Container/Props/Parent";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <p className="text-center">The app is coming soon ...</p>
         <br/>
         {/* <Note /> */}
-        <LifeCycleDemo />
+        {/* <LifeCycleDemo /> */}
+        <Parent/>
       </div>
   );
 }
