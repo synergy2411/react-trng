@@ -1,0 +1,5 @@
+For Advance JavaScript Concepts : 
+https://javascript.info/
+
+For sementic versioning :
+https://semver.org/

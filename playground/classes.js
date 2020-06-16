@@ -1,7 +1,17 @@
 
-import {} from 'path/to/module/filename';
+// ES6 way - setup the babel config
+// import {} from 'path/to/module/filename';
 
-export class Student extends Person{
+// ES5 way
+// module.exports = {}
+// require();
+
+
+class Person{
+    constructor(){}
+}
+
+class Student extends Person{
     constructor(name, email, age){
         super();
         this.name = name;
@@ -14,6 +24,5 @@ export class Student extends Person{
     }
 }
 
-class Person{
-
-}
+let foo = new Student("Foo Bar", "foo@test.com", 34);
+console.log(foo.getDetails());
