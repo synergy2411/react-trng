@@ -1,0 +1,8 @@
+div.mystyle{
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+div.mystyle:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
