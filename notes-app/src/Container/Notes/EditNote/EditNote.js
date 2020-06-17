@@ -5,11 +5,23 @@ class EditNote extends React.Component{
         txtValue : this.props.note.body
     }
     handleChange = event => {
-        // console.log(event.target.value);
         this.setState({
             txtValue : event.target.value
         })
+
+        // this.setState((state, props) => {
+        //     console.log("STATE : ", state);
+        //     console.log("PROPS : ", props);
+        //     return {
+        //         txtValue : 
+        //     }
+        // })
     }
+    // componentDidUpdate(){
+    //     this.setState({
+    //         txtValue : this.props.note.body
+    //     })
+    // }
 
     handleEditClick = () => {
         this.props.onhandleEdit({
