@@ -83,9 +83,8 @@ function App() {
           <Route exact path={path}>
             <h3>Home Component Loaded....</h3>
           </Route>
-          <Route path={`${path}/:courseId`}>
-            <Course />
-          </Route>
+          <Route path={`${path}/:courseId`} children={<Course />} />
+
         </Switch>
       </div>
     );
