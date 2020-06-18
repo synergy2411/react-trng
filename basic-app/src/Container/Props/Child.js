@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 // class Child extends React.Component{
 
@@ -22,6 +23,11 @@ function Child(props) {
       </button>
     </div>
   );
+}
+
+Child.propTypes = {
+  name : PropTypes.string,
+  age : PropTypes.number
 }
 
 export default Child;

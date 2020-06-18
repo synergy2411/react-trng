@@ -7,7 +7,7 @@ class Parent extends React.Component{
         this.state = {
             user : {
                 name : "Foo",
-                age : 34,
+                age : "34",
                 address : {}
             },
             name : "FooBar"
