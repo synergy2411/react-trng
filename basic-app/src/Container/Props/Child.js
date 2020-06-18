@@ -30,4 +30,6 @@ Child.propTypes = {
   age : PropTypes.number
 }
 
+// npm install prop-types --save
+
 export default Child;

@@ -4,6 +4,8 @@ import "./App.css";
 import Note from './Container/Note/Note';
 import LifeCycleDemo from "./Container/LifeCycle/LifeCycle";
 import Parent from "./Container/Props/Parent";
+import ControlledComponent from './Container/ControlledComponent/FormComponent';
+import FuncCmp from "./Container/Hooks/UseStateHook";
 
 function App() {
   return (
@@ -15,7 +17,10 @@ function App() {
         <br/>
         {/* <Note /> */}
         {/* <LifeCycleDemo /> */}
-        <Parent/>
+        {/* <Parent/> */}
+        {/* <ControlledComponent /> */}
+
+        <FuncCmp />
       </div>
   );
 }
