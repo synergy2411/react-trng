@@ -32,10 +32,14 @@ const mapDispatchToProps = dispatch => {
     return {
         onIncrease : () => {
             // dispatch({type : "INCREMENT"});
-            dispatch({type : actionType.INCREMENT})
+            // dispatch({type : actionType.INCREMENT})
+            dispatch(actionType.onIncrement())
         },
         onDecrease : () => {dispatch({type : "DECREMENT"})},
-        onAdd : (value) => {dispatch({type : "ADD", payload : value})},
+        onAdd : (value) => {
+            // dispatch({type : "ADD", payload : value})
+            dispatch(actionType.onAdd(value))
+        },
         onSubstract : value => {dispatch({type : "SUBSTRACT", payload : value})}
     }
 }
