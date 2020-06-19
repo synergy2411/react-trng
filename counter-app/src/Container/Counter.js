@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ActionButton from './ActionButton/ActionButton';
 
 class Counter extends React.Component{
     render(){
@@ -8,6 +9,7 @@ class Counter extends React.Component{
                 <p className="display-4">
                     Counter  : { this.props.counter }
                 </p>
+                <ActionButton />
             </div>
         )
     }
@@ -18,11 +20,16 @@ class Counter extends React.Component{
 // Map the Redux state with the Component Props
 const mapStateToProps = (state) => {        
     return {
-     counter : state.counter   
+     counter : state.counter,
+     result : state.result   
     }
 }
 // Map the dispatch Actions with Component Props
-const mapDispatchToProps = (state) => {}
+const mapDispatchToProps = (dispatch) => {
+    return {
+
+    }
+}
 
 const connectedFunc = connect(mapStateToProps, mapDispatchToProps);
 
